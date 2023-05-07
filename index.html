@@ -1,31 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Ejemplo de HTML y CSS</title>
-	<style>
-		body {
-			background-color: lightblue;
-			font-family: Arial, sans-serif;
-		}
-		
-		h1 {
-			color: navy;
-			font-size: 36px;
-			text-align: center;
-		}
-		
-		p {
-			font-size: 18px;
-			line-height: 1.5;
-			padding: 10px;
-			border: 1px solid black;
-			background-color: white;
-			margin: 20px;
-		}
-	</style>
+	<meta charset="UTF-8">
+	<title>Mi Portafolio Personal</title>
+    <style>
+        /* Estilos para la cabecera */
+    header {
+    background-color: #AEC6CF;
+    color: white;
+    padding: 20px;
+    }
+    header img {
+        width: 180px; /* Cambiar el ancho de la imagen segun tu preferencia */
+        height: 180px; /* Cambiar la altura de la imagen segun tu preferencia */
+        border-radius: 50%; /*Opcional: agregar bordes redondeados a la imagen */
+    }
+
+    /* Estilos para el contenido principal */
+    main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    }
+    /* Estilos para el nombre */
+    h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    }
+
+    /* Estilos para la biografía */
+    p {
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 1em;
+    }
+
+    /* Estilos para la sección de habilidades */
+    .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    }
+
+    /* Estilos para cada habilidad */
+    .skill {
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    }
+
+    /* Estilos para los enlaces de navegación */
+    nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    }
+
+    /* Estilos para el pie de página */
+    footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    }
+    </style>          
+	<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-	<h1>Bienvenidos a mi página web</h1>
-	<p>Esta es una página de ejemplo que muestra cómo se pueden utilizar HTML y CSS juntos para crear un sitio web. ¡Espero que te guste!</p>
+	<header>
+		<h1>Matthew Torres</h1>
+        
+		<nav>
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Imagen de cabecera"
+
+			<ul>
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#sobre-mi">Sobre Mí</a></li>
+				<li><a href="#experiencia">Experiencia</a></li>
+				<li><a href="#habilidades">Habilidades</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="inicio">
+
+			<h2>Bienvenido a mi Portafolio Personal</h2>
+			<p>Aquí puedes encontrar información sobre mi experiencia, habilidades y proyectos.</p>
+		</section>
+
+		<section id="sobre-mi">
+			<h2>Sobre Mí</h2>
+			<p>¡Hola! Soy un desarrollador apasionado por la tecnología y el diseño web. Me encanta crear soluciones innovadoras para resolver problemas complejos y crear interfaces elegantes e intuitivas.</p>
+		</section>
+
+		<section id="experiencia">
+			<h2>Experiencia</h2>
+			<ul>
+				<li>Empresa 1: Cargo, Fecha de inicio - Fecha de fin</li>
+				<li>Empresa 2: Cargo, Fecha de inicio - Fecha de fin</li>
+				<li>Empresa 3: Cargo, Fecha de inicio - Fecha de fin</li>
+			</ul>
+		</section>
+
+		<section id="habilidades">
+			<h2>Habilidades</h2>
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JavaScript</li>
+				<li>PHP</li>
+				<li>MySQL</li>
+				<li>Diseño Gráfico</li>
+			</ul>
+		</section>
+
+		<section id="contacto">
+			<h2>Contacto</h2>
+			<p>Puedes contactarme en:</p>
+			<ul>
+				<li>Teléfono: 123-456-7890</li>
+				<li>Email: miemail@example.com</li>
+				<li>LinkedIn: <a href="#">Mi Perfil de LinkedIn</a></li>
+			</ul>
+		</section>
+	</main>
+
+	<footer>
+		<p>Derechos Reservados &copy; 2023 | Mi Portafolio Personal</p>
+	</footer>
 </body>
 </html>
